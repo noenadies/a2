@@ -53,8 +53,8 @@ function success(pos) {
   console.log('More or less ' + crd.accuracy + ' meters.');
   mlg=crd.longitude;
   mlt=crd.latitude;
-  datcc("demo","lat:  "+crd.latitude);
-  datcc("demo2","log:  "+crd.longitude);
+  //datcc("demo","lat:  "+crd.latitude);
+  //datcc("demo2","log:  "+crd.longitude);
 
 
   setTimeout(function(){
@@ -112,7 +112,7 @@ function cargxx(lt,lg){
 	firebase.database().ref().child("latlong").push(obj);
 	
 
-    alert("enviado  "+obj.lat+"  lg "+obj.lng);
+  //  alert("enviado  "+obj.lat+"  lg "+obj.lng);
     
 }
 </script>
